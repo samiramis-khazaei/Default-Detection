@@ -2,11 +2,11 @@
 
 
 
-## Code and Resources Used 
-**Jupiter Notebook**
-**Packages:** pandas, numpy, sklearn, matplotlib, seaborn
-**Data:** https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients
-**Article:** https://www.semanticscholar.org/paper/The-comparisons-of-data-mining-techniques-for-the-Yeh-Lien/1cacac4f0ea9fdff3cd88c151c94115a9fddcf33
+## Code and Resources Used <br> 
+**Jupiter Notebook**<br> 
+**Packages:** pandas, numpy, sklearn, matplotlib, seaborn<br> 
+**Data:** https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients<br> 
+**Article:** https://www.semanticscholar.org/paper/The-comparisons-of-data-mining-techniques-for-the-Yeh-Lien/1cacac4f0ea9fdff3cd88c151c94115a9fddcf33<br> 
 ## Problem Statement: 
 This project aims to compare various data mining techniques for detecting defaults. In a well-developed financial system, crisis management is reactive, while risk prediction is proactive. The primary goal of risk prediction is to utilize financial data—such as business financial statements, customer transaction histories, and repayment records—to forecast business performance or assess the credit risk of individual customers, thereby mitigating potential damage and uncertainty.
 
@@ -36,19 +36,26 @@ To clean the data I made the following changes and created the following variabl
 -- In the "Marital Status" column (X4), replace category 0 with 3.
 ## Exploratory Data Analysis
 ![Untitled](https://github.com/user-attachments/assets/78a42964-51cc-4d8b-90f9-6a3b3874d017)
+
 The bar chart shows that we have a binary classification problem on a relatively unbalanced dataset. 
+
 ![Untitled](https://github.com/user-attachments/assets/8de0ca7f-7849-41da-95b5-696c9032fd9d)
 
 ![Untitled](https://github.com/user-attachments/assets/1c86d0f1-c0d9-4012-afb1-4b36eeff65e6)
 
-A question that comes to mind is: Do the proportion of default is the same for both genders? To test this hypothesis, I performed a chi-square test.
-State the Hypotheses:
+A question that comes to mind is: Do the proportion of default is the same for both genders? To test this hypothesis, I performed a chi-square test. State the Hypotheses:
 - Null Hypothesis (H0): The proportion of defaults and non-defaults is the same for men and women (i.e., gender and default status are independent).
 - Alternative Hypothesis (H1): The proportion of defaults and non-defaults differs by gender (i.e., gender and default status are not independent).
-Based on p-vales I reject the null hypothesis: There is a significant difference in the default rates between men and women.    
+
+
+Based on p-vales I reject the null hypothesis: There is a significant difference in the default rates between men and women.
+
 ![Untitled](https://github.com/user-attachments/assets/db949a2e-771a-406f-ab12-7b9bb69e493b)
+
 The probability of non_default of clients between 26 and 40 is higher than the default of this age group.
+
 ![Untitled](https://github.com/user-attachments/assets/f8066451-d5ed-4be7-8787-540c4b48a5a7)
+
 when the bank pays more than 132000$ credit to clients, it is more likely to default.
 
 
