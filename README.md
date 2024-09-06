@@ -1,3 +1,13 @@
+# Credit Card Default Detection 
+
+
+
+## Code and Resources Used 
+#### Jupiter Notebook
+#### Packages : 
+#### Data : https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients
+#### Article : https://www.semanticscholar.org/paper/The-comparisons-of-data-mining-techniques-for-the-Yeh-Lien/1cacac4f0ea9fdff3cd88c151c94115a9fddcf33
+
 The objective of this project is to compare various data mining techniques for detecting defaults. In a well-developed financial system, crisis management is reactive, while risk prediction is proactive. The primary goal of risk prediction is to utilize financial data—such as business financial statements, customer transaction histories, and repayment records—to forecast business performance or assess the credit risk of individual customers, thereby mitigating potential damage and uncertainty.
 
 Data mining involves the exploration and analysis, either automatically or semi-automatically, of large datasets to uncover meaningful patterns and rules.
