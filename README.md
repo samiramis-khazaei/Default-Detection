@@ -58,6 +58,31 @@ The probability of non_default of clients between 26 and 40 is higher than the d
 
 when the bank pays more than 132000$ credit to clients, it is more likely to default.
 
+** Check Collinearity:**<br>
+
+![Untitled](https://github.com/user-attachments/assets/0ebf5e16-4473-48df-94cb-2ee1955a7fd5)
+
+![Untitled](https://github.com/user-attachments/assets/c775602b-d25d-4104-bd58-aa2f45129791)
+
+The plots show the high correlation between columns X12, X13, X14, X15, X16, X17 so I drop columns with high collinearity , X12, X13, X14, X15, X16. 
+
+### Data Preprocessing <br>
+For data preprocessing, I performed the following steps:<br>
+**Conversion of Categorical Data to Dummy Variables:** I transformed categorical features into dummy variables (one-hot encoding) to enable their inclusion in machine learning models. This process involves creating binary columns for each category in the original categorical feature.<br>
+**Splitting Data for Modeling:** I divided the dataset into training and testing subsets. This separation ensures that the model is trained on one portion of the data and evaluated on a separate, unseen portion to assess its performance and generalizability.
+**Normalization Using StandardScaler:** I applied normalization to standardize the features by removing the mean and scaling to unit variance. This step, performed using StandardScaler, ensures that each feature contributes equally to the model, improving convergence and performance.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
