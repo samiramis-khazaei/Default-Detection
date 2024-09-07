@@ -69,8 +69,43 @@ The plots show the high correlation between columns X12, X13, X14, X15, X16, X17
 ### Data Preprocessing <br>
 For data preprocessing, I performed the following steps:<br>
 **Conversion of Categorical Data to Dummy Variables:** I transformed categorical features into dummy variables (one-hot encoding) to enable their inclusion in machine learning models. This process involves creating binary columns for each category in the original categorical feature.<br>
-**Splitting Data for Modeling:** I divided the dataset into training and testing subsets. This separation ensures that the model is trained on one portion of the data and evaluated on a separate, unseen portion to assess its performance and generalizability.
-**Normalization Using StandardScaler:** I applied normalization to standardize the features by removing the mean and scaling to unit variance. This step, performed using StandardScaler, ensures that each feature contributes equally to the model, improving convergence and performance.
+**Splitting Data for Modeling:** I divided the dataset into training and testing subsets. This separation ensures that the model is trained on one portion of the data and evaluated on a separate, unseen portion to assess its performance and generalizability.<br>
+**Normalization Using StandardScaler:** I applied normalization to standardize the features by removing the mean and scaling to unit variance. This step, performed using StandardScaler, ensures that each feature contributes equally to the model, improving convergence and performance.<br>
+
+### Risk Bucketing:<br>
+Although the target variable is divided into two classes (default and non-default), I performed risk bucketing to explore the possibility of additional risk segments by identifying the optimal number of clusters. Using clustering techniques, I applied the elbow method, Calinski-Harabasz (CH) index, and Silhouette Score to evaluate the clustering results. Calinski-Harabasz (CH) index and Silhouette Score suggested that the optimal number of clusters is two. This indicates that the data naturally separates into two distinct groups, which align with the binary classification of default and non-default, and suggests that further segmentation beyond these two clusters may not be meaningful or necessary based on the current data.<br>
+![Untitled](https://github.com/user-attachments/assets/358fc957-66e5-483f-85cb-bdef2e32ef5c)
+
+
+![Untitled-1](https://github.com/user-attachments/assets/30015dd1-69e5-48cf-b580-587372a413a8)
+
+
+
+
+
+![Untitled](https://github.com/user-attachments/assets/861726e2-491f-45e7-a736-6f2cc41857dd)
+
+The histograms provide 3 distributions: 1- Overall Distribution 2- Default Cases 3- Non-Default Cases. In these histograms,we can see the distribution of values for each class. If the histograms exhibit distinct peaks, different means, or separate clusters, it suggests that the feature has different characteristics for default and non-default cases. The difference in the distribution can be indicative of the feature's ability to discriminate between the two classes. For example, the distribution of features X1, X6, X7, X8, X9, X10, X11, X2_1, X2_2, X3_1, X3_2, X3_3, X4_1, X4_2 have a clear separation between default and non-default cases, it implies that these features can potentially be a strong indicator for non-default detection. On the other hand, if the histograms overlap significantly or show similar distributions, it suggests that the feature may not provide much discriminatory information.<br>
+
+## Model Building
+I tried five different models:<br>
+Decision Tree Classifier – Perform feature importance and baseline for the model<br>
+Gaussian Mixture Model<br>
+Logistic Regression Model<br>
+K Nearest Neighborhood<br>
+Neural Network<br>
+
+## Model Performace: 
+Since the target variable is imbalanced, the metrics for evaluation are: Confusion Matrix, recall, precision, and f1 score<br>
+**Decision Tree Classifier F1:** 0.47 <br>
+**Gaussian Mixture Model F1:** 0.78 <br>
+**Logistic Regression Model F1:** 0.36 <br>
+**K Nearest Neighborhood F1:** 0.47 <br>
+**Neural Network F1:** 0.47 
+
+
+
+
 
 
 
